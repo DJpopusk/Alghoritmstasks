@@ -378,9 +378,9 @@ void printResultsTable(const vector<TestResult>& results) {
     cout << "РЕЗУЛЬТАТЫ ТЕСТИРОВАНИЯ ГЕНЕТИЧЕСКОГО АЛГОРИТМА" << endl;
     cout << string(80, '=') << endl;
 
-    cout << left << setw(20) << "Файл"
-         << setw(20) << "GA время (сек)"
-         << setw(15) << "GA результат" << endl;
+    cout << left << setw(20) << "Filename"
+         << setw(20) << "GA time (s)"
+         << setw(15) << "GA result" << endl;
     cout << string(80, '-') << endl;
 
     for (const auto& result : results) {
