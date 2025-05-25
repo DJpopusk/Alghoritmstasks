@@ -126,10 +126,6 @@ void printSummary(const vector<Result>& results) {
     double total_time = 0.0;
     int total_value = 0;
 
-    cout << "\n=== Greedy Algorithm Results (Value/Weight) ===\n"
-         << "File\t\t\tValue\tWeight\tItems\tTime\n"
-         << "---------------------------------------------\n";
-
     for(const auto& res : results) {
         cout << res.filename << "\t"
              << res.max_value << "\t"
@@ -141,7 +137,7 @@ void printSummary(const vector<Result>& results) {
         total_value += res.max_value;
     }
 
-    cout << "---------------------------------------------\n"
+    cout
          << "Average time: " << total_time / results.size() << "s\n"
          << "Total value: " << total_value << "\n"
          << "Processed files: " << results.size() << endl;
