@@ -245,9 +245,6 @@ void printStatistics(const vector<Result>& results) {
     double totalTime = 0.0;
     int totalValue = 0;
 
-    cout << "\n=== Branch and Bound Results ===" << endl;
-    cout << "Filename\t\tMax Value\tWeight\t\tItems\t\tTime(s)" << endl;
-    cout << "--------------------------------------------------------------------" << endl;
 
     for (const auto& result : results) {
         cout << result.filename << "\t\t"
@@ -260,7 +257,6 @@ void printStatistics(const vector<Result>& results) {
         totalValue += result.maxValue;
     }
 
-    cout << "--------------------------------------------------------------------" << endl;
     cout << "Average execution time: " << fixed << setprecision(3)
          << totalTime / results.size() << " seconds" << endl;
     cout << "Total value across all instances: " << totalValue << endl;
