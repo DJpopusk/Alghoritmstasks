@@ -1,1 +1,1 @@
-# Alghoritmstasks
+# Algorithmstasks
